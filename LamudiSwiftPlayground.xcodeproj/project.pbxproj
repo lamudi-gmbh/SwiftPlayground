@@ -12,7 +12,7 @@
 		64819DF71B15B0EF00D585E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64819DF51B15B0EF00D585E3 /* Main.storyboard */; };
 		64819DF91B15B0EF00D585E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64819DF81B15B0EF00D585E3 /* Images.xcassets */; };
 		64819DFC1B15B0EF00D585E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64819DFA1B15B0EF00D585E3 /* LaunchScreen.xib */; };
-		64819E081B15B0EF00D585E3 /* LamudiSwiftPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64819E071B15B0EF00D585E3 /* LamudiSwiftPlaygroundTests.swift */; };
+		64819E081B15B0EF00D585E3 /* LamudiQAClassStructComparasion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64819E071B15B0EF00D585E3 /* LamudiQAClassStructComparasion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,7 @@
 		64819DFB1B15B0EF00D585E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		64819E011B15B0EF00D585E3 /* LamudiSwiftPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LamudiSwiftPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64819E061B15B0EF00D585E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		64819E071B15B0EF00D585E3 /* LamudiSwiftPlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LamudiSwiftPlaygroundTests.swift; sourceTree = "<group>"; };
+		64819E071B15B0EF00D585E3 /* LamudiQAClassStructComparasion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LamudiQAClassStructComparasion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 		64819E041B15B0EF00D585E3 /* LamudiSwiftPlaygroundTests */ = {
 			isa = PBXGroup;
 			children = (
-				64819E071B15B0EF00D585E3 /* LamudiSwiftPlaygroundTests.swift */,
+				64819E071B15B0EF00D585E3 /* LamudiQAClassStructComparasion.swift */,
 				64819E051B15B0EF00D585E3 /* Supporting Files */,
 			);
 			path = LamudiSwiftPlaygroundTests;
@@ -221,7 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64819E081B15B0EF00D585E3 /* LamudiSwiftPlaygroundTests.swift in Sources */,
+				64819E081B15B0EF00D585E3 /* LamudiQAClassStructComparasion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
