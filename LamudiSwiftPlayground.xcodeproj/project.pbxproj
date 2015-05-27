@@ -13,6 +13,8 @@
 		64819DF91B15B0EF00D585E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64819DF81B15B0EF00D585E3 /* Images.xcassets */; };
 		64819DFC1B15B0EF00D585E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64819DFA1B15B0EF00D585E3 /* LaunchScreen.xib */; };
 		64819E081B15B0EF00D585E3 /* LamudiQAClassStructComparasion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64819E071B15B0EF00D585E3 /* LamudiQAClassStructComparasion.swift */; };
+		64E8FF6B1B161F4B00AB80E3 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8FF6A1B161F4B00AB80E3 /* Stack.swift */; };
+		64E8FF6C1B16201D00AB80E3 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8FF6A1B161F4B00AB80E3 /* Stack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 		64819E011B15B0EF00D585E3 /* LamudiSwiftPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LamudiSwiftPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64819E061B15B0EF00D585E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64819E071B15B0EF00D585E3 /* LamudiQAClassStructComparasion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LamudiQAClassStructComparasion.swift; sourceTree = "<group>"; };
+		64E8FF6A1B161F4B00AB80E3 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,7 @@
 		64819DEE1B15B0EF00D585E3 /* LamudiSwiftPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				64E8FF6A1B161F4B00AB80E3 /* Stack.swift */,
 				64819DF11B15B0EF00D585E3 /* AppDelegate.swift */,
 				64819DF31B15B0EF00D585E3 /* ViewController.swift */,
 				64819DF51B15B0EF00D585E3 /* Main.storyboard */,
@@ -212,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64E8FF6B1B161F4B00AB80E3 /* Stack.swift in Sources */,
 				64819DF41B15B0EF00D585E3 /* ViewController.swift in Sources */,
 				64819DF21B15B0EF00D585E3 /* AppDelegate.swift in Sources */,
 			);
@@ -221,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64E8FF6C1B16201D00AB80E3 /* Stack.swift in Sources */,
 				64819E081B15B0EF00D585E3 /* LamudiQAClassStructComparasion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +417,7 @@
 				64819E0D1B15B0EF00D585E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		64819E0E1B15B0EF00D585E3 /* Build configuration list for PBXNativeTarget "LamudiSwiftPlaygroundTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +426,7 @@
 				64819E101B15B0EF00D585E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,38 +9,6 @@
 import UIKit
 import XCTest
 
-struct StackStruct<T> {
-    private var items = [T]()
-    
-    mutating func push(item: T) {
-        items.append(item)
-    }
-    
-    mutating func pop() -> T {
-        return items.removeLast()
-    }
-}
-
-class StackClass<T> {
-    private var items = [T]()
-    
-    func push(item: T) {
-        items.append(item)
-    }
-    
-    func pop() -> T {
-        return items.removeLast()
-    }
-}
-
-class SimpleClass<T> {
-    
-    var item: T
-    
-    init(item: T) {
-        self.item = item
-    }
-}
 
 class LamudiQAClassStructComparasion: XCTestCase {
     
@@ -56,7 +24,7 @@ class LamudiQAClassStructComparasion: XCTestCase {
         super.tearDown()
     }
     
-    func testPerformanceStack() {
+    func testPerformanceStruct() {
         self.measureBlock() {
             for i in 0..<self.testCases {
                 self.stackStruct.push(SimpleClass<Int>(item: i))
