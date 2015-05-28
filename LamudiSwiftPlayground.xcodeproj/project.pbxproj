@@ -14,10 +14,11 @@
 		64819DFC1B15B0EF00D585E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64819DFA1B15B0EF00D585E3 /* LaunchScreen.xib */; };
 		64819E081B15B0EF00D585E3 /* LamudiQAClassStructComparasion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64819E071B15B0EF00D585E3 /* LamudiQAClassStructComparasion.swift */; };
 		64D980C71B1735DA00238B49 /* LamudiQANetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D980C61B1735DA00238B49 /* LamudiQANetworkManager.swift */; };
-		64D980C81B17363100238B49 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8FF6D1B16265100AB80E3 /* BaseRequest.swift */; };
+		64D980C81B17363100238B49 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8FF6D1B16265100AB80E3 /* Request.swift */; };
+		64D980CB1B17715200238B49 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D980CA1B17715200238B49 /* Parser.swift */; };
 		64E8FF6B1B161F4B00AB80E3 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8FF6A1B161F4B00AB80E3 /* Stack.swift */; };
 		64E8FF6C1B16201D00AB80E3 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8FF6A1B161F4B00AB80E3 /* Stack.swift */; };
-		64E8FF6E1B16265100AB80E3 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8FF6D1B16265100AB80E3 /* BaseRequest.swift */; };
+		64E8FF6E1B16265100AB80E3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8FF6D1B16265100AB80E3 /* Request.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +43,9 @@
 		64819E061B15B0EF00D585E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64819E071B15B0EF00D585E3 /* LamudiQAClassStructComparasion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LamudiQAClassStructComparasion.swift; sourceTree = "<group>"; };
 		64D980C61B1735DA00238B49 /* LamudiQANetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LamudiQANetworkManager.swift; sourceTree = "<group>"; };
+		64D980CA1B17715200238B49 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		64E8FF6A1B161F4B00AB80E3 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
-		64E8FF6D1B16265100AB80E3 /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		64E8FF6D1B16265100AB80E3 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				64E8FF6A1B161F4B00AB80E3 /* Stack.swift */,
-				64E8FF6D1B16265100AB80E3 /* BaseRequest.swift */,
+				64E8FF6D1B16265100AB80E3 /* Request.swift */,
+				64D980CA1B17715200238B49 /* Parser.swift */,
 				64819DF11B15B0EF00D585E3 /* AppDelegate.swift */,
 				64819DF31B15B0EF00D585E3 /* ViewController.swift */,
 				64819DF51B15B0EF00D585E3 /* Main.storyboard */,
@@ -223,8 +226,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64E8FF6E1B16265100AB80E3 /* BaseRequest.swift in Sources */,
+				64E8FF6E1B16265100AB80E3 /* Request.swift in Sources */,
 				64E8FF6B1B161F4B00AB80E3 /* Stack.swift in Sources */,
+				64D980CB1B17715200238B49 /* Parser.swift in Sources */,
 				64819DF41B15B0EF00D585E3 /* ViewController.swift in Sources */,
 				64819DF21B15B0EF00D585E3 /* AppDelegate.swift in Sources */,
 			);
@@ -234,7 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64D980C81B17363100238B49 /* BaseRequest.swift in Sources */,
+				64D980C81B17363100238B49 /* Request.swift in Sources */,
 				64E8FF6C1B16201D00AB80E3 /* Stack.swift in Sources */,
 				64819E081B15B0EF00D585E3 /* LamudiQAClassStructComparasion.swift in Sources */,
 				64D980C71B1735DA00238B49 /* LamudiQANetworkManager.swift in Sources */,
