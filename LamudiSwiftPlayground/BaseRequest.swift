@@ -29,12 +29,12 @@ class BaseRequestQueue {
 
 class BaseRequest: NSOperation {
     
-    private let timeout: NSTimeInterval = 30.0
+    let timeout: NSTimeInterval = 30.0
     let method: HTTPMethod
-    let success: (NSData, NSHTTPURLResponse) -> ()
-    let fail: (NSHTTPURLResponse?) -> ()
+    let success: (NSData, NSURLResponse) -> ()
+    let fail: (NSURLResponse?) -> ()
     
-    init(method: HTTPMethod, success: (NSData, NSHTTPURLResponse) -> (), fail: (NSHTTPURLResponse?) -> ()) {
+    init(method: HTTPMethod, success: (NSData, NSURLResponse) -> (), fail: (NSURLResponse?) -> ()) {
         self.method = method
         self.success = success
         self.fail = fail
@@ -42,7 +42,7 @@ class BaseRequest: NSOperation {
     }
     
     func path() -> String {
-        preconditionFailure("Abstrack method")
+        preconditionFailure("Abstract method")
     }
     
     override func main() {
@@ -67,14 +67,10 @@ class BaseRequest: NSOperation {
         var error: NSErrorPointer = nil
         var data = NSURLConnection.sendSynchronousRequest(request, returningResponse: &response, error: error)
 
-        if let httpResponseCode = response as? NSHTTPURLResponse {
-            if let responseData = data {
-                success(responseData, httpResponseCode)
-            } else {
-                fail(httpResponseCode)
-            }
+        if let responseData = data {
+            success(responseData, response!)
         } else {
-            fail(nil)
+            fail(response)
         }
     }
 }
