@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>53361BEA-3E8C-4541-ABD3-1C70163F610E</string>
 	<key>IDESourceControlProjectName</key>
-	<string>LamudiSwiftPlayground</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>7F71E1B33655E411DB1153F1FB612B97CA980CF5</key>
 		<string>https://github.com/lamudi-gmbh/SwiftPlayground.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>LamudiSwiftPlayground.xcodeproj</string>
+	<string>LamudiSwiftPlayground.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>7F71E1B33655E411DB1153F1FB612B97CA980CF5</key>

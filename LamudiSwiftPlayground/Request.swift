@@ -22,17 +22,18 @@ class BaseRequestQueue {
         operationQueue.maxConcurrentOperationCount = NSOperationQueueDefaultMaxConcurrentOperationCount
     }
     
-    func addRequest(request: BaseRequest) {
+    func addRequest(request: Request) {
         self.operationQueue.addOperation(request)
     }
 }
 
-class BaseRequest: NSOperation {
+class Request: NSOperation {
     
     let timeout: NSTimeInterval = 30.0
     let method: HTTPMethod
     let success: (NSData, NSURLResponse) -> ()
     let fail: (NSURLResponse?) -> ()
+    var path: String?
     
     init(method: HTTPMethod, success: (NSData, NSURLResponse) -> (), fail: (NSURLResponse?) -> ()) {
         self.method = method
@@ -41,12 +42,8 @@ class BaseRequest: NSOperation {
         super.init()
     }
     
-    func path() -> String {
-        preconditionFailure("Abstract method")
-    }
-    
     override func main() {
-        if let url = NSURL(string: self.path()) {
+        if let path = self.path, url = NSURL(string: path) {
             sendRequest(url)
         } else {
             // invalid url
@@ -72,11 +69,5 @@ class BaseRequest: NSOperation {
         } else {
             fail(response)
         }
-    }
-}
-
-class TestRequest: BaseRequest {
-    override func path() -> String {
-        return "http://127.0.0.1:8000"
     }
 }

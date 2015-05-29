@@ -9,41 +9,35 @@
 import Foundation
 
 
-protocol ParserProtocol {
+protocol ParserDelegate {
     typealias T
-    func parse(data: NSData)
-    init(success: (T) -> (), fail: () -> ())
+    static func parse(data: NSData) -> ParserResult<T>
 }
 
-class JSONParser: ParserProtocol {
+struct ParserResult<T> {
+    var isValid: Bool
+    var result: T
+}
+
+class JSONParser: ParserDelegate {
     
-    typealias T = [String:AnyObject]
-    private let success: ([String:AnyObject]) -> ()
-    private let fail: () -> ()
-    
-    required init(success: ([String:AnyObject]) -> (), fail: () -> ()) {
-        self.success = success
-        self.fail = fail
-    }
-    
-    func parse(data: NSData) {
+    class func parse(data: NSData) -> ParserResult<[String:AnyObject]?> {
         if let str = NSString(data: data, encoding: NSUTF8StringEncoding) as? String {
             var parseError: NSError?
             var result: AnyObject? = NSJSONSerialization.JSONObjectWithData(data,
                 options: NSJSONReadingOptions.allZeros,
                 error: &parseError)
             
-            if let _ = parseError {
-                if let resultDictionary = result as? [String:AnyObject] {
-                    success(resultDictionary)
-                } else {
-                    fail()
-                }
-            } else {
-                fail()
+            if parseError != nil {
+                return ParserResult(isValid: false, result: nil)
             }
-        } else {
-            fail()
+            
+            if let resultDictionary = result as? [String:AnyObject] {
+                return ParserResult(isValid: true, result: resultDictionary)
+            } else {
+                return ParserResult(isValid: false, result: nil)
+            }
         }
+        return ParserResult(isValid: false, result: nil)
     }
 }

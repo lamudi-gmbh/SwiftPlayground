@@ -13,6 +13,7 @@
 		64819DF91B15B0EF00D585E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64819DF81B15B0EF00D585E3 /* Images.xcassets */; };
 		64819DFC1B15B0EF00D585E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64819DFA1B15B0EF00D585E3 /* LaunchScreen.xib */; };
 		64819E081B15B0EF00D585E3 /* LamudiQAClassStructComparasion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64819E071B15B0EF00D585E3 /* LamudiQAClassStructComparasion.swift */; };
+		64CA19B21B1897730038ABF5 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D980CA1B17715200238B49 /* Parser.swift */; };
 		64D980C71B1735DA00238B49 /* LamudiQANetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D980C61B1735DA00238B49 /* LamudiQANetworkManager.swift */; };
 		64D980C81B17363100238B49 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8FF6D1B16265100AB80E3 /* Request.swift */; };
 		64D980CB1B17715200238B49 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D980CA1B17715200238B49 /* Parser.swift */; };
@@ -240,6 +241,7 @@
 			files = (
 				64D980C81B17363100238B49 /* Request.swift in Sources */,
 				64E8FF6C1B16201D00AB80E3 /* Stack.swift in Sources */,
+				64CA19B21B1897730038ABF5 /* Parser.swift in Sources */,
 				64819E081B15B0EF00D585E3 /* LamudiQAClassStructComparasion.swift in Sources */,
 				64D980C71B1735DA00238B49 /* LamudiQANetworkManager.swift in Sources */,
 			);
